@@ -1,0 +1,42 @@
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100%;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  padding-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+.container-table {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+table {
+  width: 100%;
+}
+
+.container-filtros {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+}
