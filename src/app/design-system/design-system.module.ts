@@ -5,19 +5,17 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
-  declarations: [
-    NavBarComponent
-  ],
+  declarations: [NavBarComponent],
   imports: [
     CommonModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule,
   ],
-  exports: [
-    NavBarComponent
-  ]
+  exports: [NavBarComponent],
 })
-export class DesignSystemModule { }
+export class DesignSystemModule {}

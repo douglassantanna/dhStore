@@ -7,7 +7,7 @@ import { OrdersComponent } from './pages/orders/orders.component';
 
 @NgModule({
   declarations: [
-  
+
     OrdersComponent
   ],
   imports: [
