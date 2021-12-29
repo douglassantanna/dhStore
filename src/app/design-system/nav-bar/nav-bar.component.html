@@ -1,0 +1,16 @@
+<div class="nav mat-elevation-z2">
+  <div class="menu">
+      <button mat-icon-button color="accent" [matMenuTriggerFor]="menu" type="button">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+          <button mat-menu-item type="button"><mat-icon>shopping_cart</mat-icon>Pedidos</button>
+          <button mat-menu-item type="button"><mat-icon>local_mall</mat-icon>Produtos</button>
+          <a mat-menu-item routerLink="/cliente"><mat-icon>people_alt</mat-icon>Clientes</a>
+          <a mat-menu-item routerLink="/identidade-acesso"><mat-icon>assignment_ind</mat-icon>Usuários</a>
+        </mat-menu>
+  </div>
+  <div class="logo">
+      <mat-icon>app_settings_alt</mat-icon>
+  </div>
+</div>
