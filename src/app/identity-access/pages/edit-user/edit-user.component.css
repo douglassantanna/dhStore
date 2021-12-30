@@ -22,3 +22,6 @@ mat-radio-button {
   justify-content: space-around;
   padding-bottom: 10px;
 }
+table {
+  width: 100%;
+}

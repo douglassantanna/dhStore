@@ -1,7 +1,7 @@
 export interface ViewTelephoneNumber {
   id: number;
-  number: number;
+  number: string;
 }
 export interface NewTelephoneNumber {
-  number: number;
+  number: string;
 }

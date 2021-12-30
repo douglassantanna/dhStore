@@ -12,19 +12,20 @@
     </mat-form-field>
 
     <div class="meio">
-      <mat-slide-toggle [(ngModel)]="active" name="ativo" *ngIf="viewUser">Ativo</mat-slide-toggle>
+      <mat-slide-toggle [(ngModel)]="active" name="active" *ngIf="viewUser">Ativo</mat-slide-toggle>
 
       <mat-radio-group [(ngModel)]="kindUser" name="kindUser">
         <mat-radio-button [value]="0">Admin</mat-radio-button>
         <mat-radio-button [value]="1">Comum</mat-radio-button>
       </mat-radio-group>
     </div>
+  </form>
 
     <span mat-dialog-subtitle>Contato</span>
     <div class="contato">
       <mat-form-field class="example-full-width" appearance="outline">
         <mat-label>número de telefone</mat-label>
-        <input matInput [(ngModel)]="telephoneNumber" name="telephoneNumber" minlength="2"/>
+        <input matInput [(ngModel)]="telephoneNumber" name="telephoneNumber"/>
         <button mat-icon-button matSuffix (click)="addTelephone()"><mat-icon>add_circle_outline</mat-icon></button>
       </mat-form-field>
     </div>
@@ -32,7 +33,7 @@
     <table mat-table class="mat-elevation-z2" [dataSource]="numbersTelephone" *ngIf="numbersTelephone.length > 0;else templateName">
       <ng-container matColumnDef="number">
         <th mat-header-cell *matHeaderCellDef>Número</th>
-        <td mat-cell *matCellDef="let row">{{ row.numero }}</td>
+        <td mat-cell *matCellDef="let row">{{ row.number }}</td>
       </ng-container>
 
       <ng-container matColumnDef="option">
@@ -51,5 +52,4 @@
     <div mat-dialog-actions>
       <button mat-raised-button color="accent" (click)="submit(myForm)" [mat-dialog-close]="data()" [disabled]="!myForm.valid">Salvar</button>
     </div>
-  </form>
 </div>
