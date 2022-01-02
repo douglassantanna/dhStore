@@ -24,4 +24,6 @@ mat-radio-button {
 }
 table {
   width: 100%;
+  overflow: auto;
+  max-height: 300px;
 }
