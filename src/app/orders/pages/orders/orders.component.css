@@ -9,13 +9,12 @@
 .orders {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   padding: 10px;
   gap: 10px;
-  /* max-width: 1200px; */
-  background-color: aquamarine;
+  max-width: 1200px;
   overflow: auto;
-  width: calc(20% - 5px);
 }
 .header {
   display: flex;

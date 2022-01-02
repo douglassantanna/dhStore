@@ -1,6 +1,6 @@
 mat-card {
-  height: 210px;
-  width: 200px;
+  height: 200px;
+  width: 180px;
 }
 mat-card-content {
   display: flex;
@@ -12,4 +12,5 @@ mat-card-actions {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: auto;
 }
