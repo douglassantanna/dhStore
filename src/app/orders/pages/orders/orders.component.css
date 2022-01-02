@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100%;
+}
+.orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 10px;
+  /* max-width: 1200px; */
+  background-color: aquamarine;
+  overflow: auto;
+  width: calc(20% - 5px);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: large;
+  padding-bottom: 10px;
+}

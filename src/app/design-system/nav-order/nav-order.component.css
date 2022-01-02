@@ -1,0 +1,15 @@
+mat-card {
+  height: 210px;
+  width: 200px;
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+mat-card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

@@ -1,0 +1,6 @@
+<div [ngSwitch]="status">
+  <div *ngSwitchCase="0">Status: preparando</div>
+  <div *ngSwitchCase="1">Status: entregando</div>
+  <div *ngSwitchCase="2">Status: entregue</div>
+  <div *ngSwitchDefault>Indefinido</div>
+</div>

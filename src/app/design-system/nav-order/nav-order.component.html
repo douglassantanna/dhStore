@@ -1,0 +1,15 @@
+<mat-card class="mat-elevation-z3">
+  <mat-card-title-group>
+    <mat-card-title>Pedido {{viewOrder.id}}</mat-card-title>
+  </mat-card-title-group>
+  <mat-card-content>
+    <span>Cliente: {{viewOrder.client}}</span>
+    <span>Preço: R$ {{viewOrder.price}}</span>
+    <ng-container *ngFor="let item of viewOrder.status">
+      <dh-box-status [status]="item"></dh-box-status>
+    </ng-container>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" type="button">Ver mais</button>
+  </mat-card-actions>
+</mat-card>
