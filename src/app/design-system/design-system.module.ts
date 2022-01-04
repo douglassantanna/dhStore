@@ -8,11 +8,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { NavOrderComponent } from './nav-order/nav-order.component';
+import { BoxOrderComponent } from './box-order/box-order.component';
 import { BoxStatusComponent } from './box-status/box-status.component';
 
 @NgModule({
-  declarations: [NavBarComponent, NavOrderComponent, BoxStatusComponent],
+  declarations: [NavBarComponent, BoxOrderComponent, BoxStatusComponent],
   imports: [
     CommonModule,
     MatIconModule,
@@ -21,6 +21,6 @@ import { BoxStatusComponent } from './box-status/box-status.component';
     MatListModule,
     MatCardModule
   ],
-  exports: [NavBarComponent, NavOrderComponent],
+  exports: [NavBarComponent, BoxOrderComponent],
 })
 export class DesignSystemModule {}
