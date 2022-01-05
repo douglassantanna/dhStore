@@ -1,7 +1,7 @@
 <div class="content">
   <div class="header">
     <span>Pedidos</span>
-    <button mat-raised-button type="button" color="accent">Novo</button>
+    <button mat-raised-button type="button" color="accent" (click)="addOrder()">Novo</button>
   </div>
   <div class="orders">
     <dh-box-order [viewOrder]="order" *ngFor="let order of orders"></dh-box-order>
