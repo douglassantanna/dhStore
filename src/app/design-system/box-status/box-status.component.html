@@ -1,6 +1,6 @@
-<div [ngSwitch]="status">
-  <div *ngSwitchCase="0">Status: preparando</div>
-  <div *ngSwitchCase="1">Status: entregando</div>
-  <div *ngSwitchCase="2">Status: entregue</div>
-  <div *ngSwitchDefault>Indefinido</div>
+<div [ngSwitch]="viewStatus">
+  <div class="status" *ngSwitchCase="0">Status: preparando<mat-icon color="primary">autorenew</mat-icon></div>
+  <div class="status" *ngSwitchCase="1">Status: entregando<mat-icon color="accent">delivery_dining</mat-icon></div>
+  <div class="status" *ngSwitchCase="2">Status: entregue<mat-icon color="success">done</mat-icon></div>
+  <div class="status" *ngSwitchDefault>Status: indefinido<mat-icon color="warn">help_outline</mat-icon></div>
 </div>

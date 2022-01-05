@@ -7,7 +7,7 @@ import { Status } from '../enums/status.enum';
   styleUrls: ['./box-status.component.css']
 })
 export class BoxStatusComponent implements OnInit {
-@Input() status!: Status;
+@Input() viewStatus!: Status;
   constructor() { }
 
   ngOnInit() {

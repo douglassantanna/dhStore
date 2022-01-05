@@ -1,5 +1,6 @@
 export enum Status {
   preparing,
   delivering,
-  delivered
+  delivered,
+  undefined
 }

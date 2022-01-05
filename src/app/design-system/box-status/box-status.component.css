@@ -1,0 +1,7 @@
+.status {
+  display: flex;
+  align-items: center;
+}
+mat-icon {
+  margin-left: 10px;
+}

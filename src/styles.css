@@ -6,6 +6,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :root {
   --primary: blue;
   --secondary: ;
-  --success: ;
+  --success: #4caf50;
   --fail: ;
+}
+.mat-success {
+  color: var(--success);
 }
