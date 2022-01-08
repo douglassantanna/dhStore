@@ -12,6 +12,7 @@ import { EditUserComponent } from '../edit-user/edit-user.component';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  title: string = 'Usuários';
   columns: string[] = ['name', 'email', 'active', 'kindUser', 'option'];
   newUser: NewUser = {} as NewUser;
   newTelephoneNumber: NewTelephoneNumber = {} as NewTelephoneNumber;

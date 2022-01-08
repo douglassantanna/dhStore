@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { IdentityAccessRoutingModule } from './identity-access-routing.module';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { UsersComponent } from './pages/users/users.component';
+import { EditUserComponent } from './pages/edit-user/edit-user.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,8 +19,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
-import { EditUserComponent } from './pages/edit-user/edit-user.component';
-import { HttpClientModule } from '@angular/common/http';
+import { DesignSystemModule } from '../design-system/design-system.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     IdentityAccessRoutingModule,
+    DesignSystemModule,
     FormsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
