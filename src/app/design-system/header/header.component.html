@@ -1,0 +1,9 @@
+<div class="header">
+  <div class="left">
+    <ng-container *ngIf="showArrowBack">
+      <a mat-icon-button (click)="goBack.emit()"><mat-icon>arrow_back</mat-icon></a>
+    </ng-container>
+    <span>{{ title }}</span>
+  </div>
+  <button mat-raised-button type="button" color="accent" (click)="newObjectEvent.emit()">Novo</button>
+</div>

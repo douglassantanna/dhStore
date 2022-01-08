@@ -8,21 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor(private route: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   clientsPage(){
-    this.route.navigate(['/clients']);
+    this.router.navigate(['/clients']);
   }
   usersPage(){
-    this.route.navigate(['/identity-access/users']);
+    this.router.navigate(['/identity-access/users']);
   }
   ordersPage(){
-    this.route.navigate(['/orders']);
+    this.router.navigate(['/orders']);
   }
   productsPage(){
-    this.route.navigate(['/orders']);
+    this.router.navigate(['/orders']);
   }
 }
