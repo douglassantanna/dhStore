@@ -1,2 +1,44 @@
+<span mat-dialog-title>{{ title }}</span>
+<div mat-dialog-content>
+  <form [formGroup]="orderForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Cliente</mat-label>
+      <input matInput formControlName="name" required />
+    </mat-form-field>
 
-<span>{{ title }}</span>
+    <div formGroupName="products">
+      <span>Produtos</span>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="productName" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Quantidade</mat-label>
+        <input matInput formControlName="quantity" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Preço</mat-label>
+        <input matInput formControlName="price" />
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" (click)="updateForm()">
+    Alterar Form
+  </button>
+  <button
+    mat-raised-button
+    color="accent"
+    type="submit"
+    [disabled]="!orderForm.valid"
+    (click)="onSubmit()"
+  >
+    Salvar
+  </button>
+</div>
+
+<pre>Form: {{ orderForm.value | json }}</pre>

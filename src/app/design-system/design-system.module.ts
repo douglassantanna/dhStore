@@ -10,9 +10,10 @@ import { MatListModule } from '@angular/material/list';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BoxOrderComponent } from './box-order/box-order.component';
 import { BoxStatusComponent } from './box-status/box-status.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [NavBarComponent, BoxOrderComponent, BoxStatusComponent],
+  declarations: [NavBarComponent, BoxOrderComponent, BoxStatusComponent, HeaderComponent],
   imports: [
     CommonModule,
     MatIconModule,
@@ -21,6 +22,6 @@ import { BoxStatusComponent } from './box-status/box-status.component';
     MatListModule,
     MatCardModule
   ],
-  exports: [NavBarComponent, BoxOrderComponent],
+  exports: [NavBarComponent, BoxOrderComponent, HeaderComponent],
 })
 export class DesignSystemModule {}
