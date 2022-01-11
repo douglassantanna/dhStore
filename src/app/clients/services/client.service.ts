@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/internal/Observable';
-import { ViewClient } from './../interfaces/iclient';
+import { NewClient, ViewClient, UpdateClient } from './../interfaces/iclient';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
@@ -15,5 +15,14 @@ export class ClientService {
 
   getClients(): Observable<ViewClient[]>{
     return this.http.get<ViewClient[]>(url)
+  }
+  createClient(newClient: NewClient): Observable<NewClient>{
+    return this.http.post<NewClient>(url, newClient);
+  }
+  updateClient(updateClient: UpdateClient): Observable<any> {
+    return this.http.put(`${url}/${updateClient.id}`, updateClient);
+  }
+  deleteClient(id: ViewClient): Observable<any> {
+    return this.http.delete(`${url}/${id}`);
   }
 }
