@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Douglas Craici",
+      "email": "douglas@douglas.com",
+      "active": false,
+      "kindUser": 0,
+      "telephoneNumber": [
+        {
+          "id": 1,
+          "numer": 41012994
+        },
+        {
+          "id": 2,
+          "number": 84424768
+        },
+        {
+          "id": 3,
+          "number": 45336969
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "teste",
+      "email": "teste@teste.com",
+      "active": true,
+      "telephoneNumber": [],
+      "kindUser": 1
+    },
+    {
+      "name": "douglas",
+      "email": "douglas",
+      "kindUser": 0,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "teste01",
+      "email": "teste",
+      "active": true,
+      "kindUser": 1
+    },
+    {
+      "name": "teste02",
+      "email": "teste02",
+      "kindUser": 0,
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "client": "Douglas Sant'Anna",
+      "price": 300.00,
+      "status": 0
+    },
+    {
+      "id": 2,
+      "client": "José Antonio",
+      "price": 600.00,
+      "status": 1
+    },
+    {
+      "id": 3,
+      "client": "João Craici",
+      "price": 900.00,
+      "status": 2
+    },
+    {
+      "id": 4,
+      "client": "Roberto Galeano",
+      "price": 1200.00,
+      "status": 3
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Douglas Craici"
+    }
+  ]
+}
