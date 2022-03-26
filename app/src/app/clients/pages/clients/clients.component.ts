@@ -27,7 +27,7 @@ export class ClientsComponent implements OnInit {
   }
   addClient(){
     const dialogRef = this.dialog.open(EditClientComponent, {
-      width: '450px',
+      // width: '450px',
     });
     dialogRef.afterClosed()
     .pipe(

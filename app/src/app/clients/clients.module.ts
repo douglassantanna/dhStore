@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { ClientsComponent } from './pages/clients/clients.component';
 import { DesignSystemModule } from '../design-system/design-system.module';
@@ -34,7 +36,9 @@ import { EditClientComponent } from './pages/edit-client/edit-client.component';
     MatIconModule,
     MatMenuModule,
     MatInputModule,
-    DesignSystemModule
+    DesignSystemModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ]
 })
 export class ClientsModule { }

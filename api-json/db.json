@@ -53,25 +53,25 @@
     {
       "id": 1,
       "client": "Douglas Sant'Anna",
-      "price": 300.00,
+      "price": 300,
       "status": 0
     },
     {
       "id": 2,
       "client": "José Antonio",
-      "price": 600.00,
+      "price": 600,
       "status": 1
     },
     {
       "id": 3,
       "client": "João Craici",
-      "price": 900.00,
+      "price": 900,
       "status": 2
     },
     {
       "id": 4,
       "client": "Roberto Galeano",
-      "price": 1200.00,
+      "price": 1200,
       "status": 3
     }
   ],
@@ -79,6 +79,10 @@
     {
       "id": 1,
       "name": "Douglas Craici"
+    },
+    {
+      "name": "Alex",
+      "id": 2
     }
   ]
 }
