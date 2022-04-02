@@ -10,7 +10,7 @@ namespace api.Identity.ViewModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public bool Active { get; set; }
+        public bool IsActive { get; set; }
         public Role Role { get; set; }
         public string Email { get; set; }
     }
@@ -21,7 +21,7 @@ namespace api.Identity.ViewModels
             Id = x.Id,
             Name = x.Name,
             Surname = x.Surname,
-            Active = x.Active,
+            IsActive = x.IsActive,
             Role = x.Role,
             Email = x.Email
         };

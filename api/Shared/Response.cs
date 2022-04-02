@@ -1,4 +1,4 @@
 namespace api.Shared
 {
-    public record Responde(string Message, bool Success = true, object Data = null);
+    public record Response(string Message, bool Success = true, object Data = null);
 }
