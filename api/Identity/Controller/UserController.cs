@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace api.Identity.Controller
 {
-    [Authorize]
+    // [Authorize]
     [ApiController]
     [Route("user")]
     public class UserController : ControllerBase

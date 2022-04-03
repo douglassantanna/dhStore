@@ -76,7 +76,7 @@ namespace api
                     }
                 });
             });
-            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("dHStore")));
+            services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("dhStore")));
             services.AddMediatR(typeof(Startup));
             services.AddScoped<IUserQuery, UserQuery>();
         }

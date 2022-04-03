@@ -2,7 +2,6 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using api.Identity.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
@@ -10,7 +9,7 @@ namespace api.Identity.Services
 {
     public static class TokenService
     {
-        public static string TokenGenerate(this IConfiguration configuration, User user, string role)
+        public static string TokenGenerate(this IConfiguration configuration, string name, string email, string role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(configuration["Auth:Secret"]);
@@ -18,8 +17,8 @@ namespace api.Identity.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Email, user.Email),
-                    new Claim(ClaimTypes.Name, user.Name),
+                    new Claim(ClaimTypes.Email, email),
+                    new Claim(ClaimTypes.Name, name),
                     new Claim(ClaimTypes.Role, role)
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
