@@ -21,12 +21,12 @@ namespace api.Identity.Services
         {
             var user = await _context.User.FirstOrDefaultAsync(x => x.Id == request.userId);
             if (user is null)
-                return new Response("Ops.. Usuário não encontrado", false);
+                return new Response("Ops.. Usuario nao encontrado", false);
 
             _context.User.Remove(user);
             _context.SaveChanges();
 
-            return new Response("Usuário excluído.");
+            return new Response("Usuario excluido.");
         }
     }
 }

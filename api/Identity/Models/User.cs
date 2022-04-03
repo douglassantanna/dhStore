@@ -13,7 +13,7 @@ namespace api.Identity.Models
             Email = email;
             Role = role;
             IsActive = true;
-            Password = Guid.NewGuid().ToString().Encrypt();
+            // Password = Guid.NewGuid().ToString().Encrypt();
             CreatedAt = DateTime.Now;
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fM+nxWqmCJU+T3Cpxbhym3yHFl85FmqtAdV2C5mClshnZXNMFBF3amxMCYBtMm9TQ4HILkglCT2hZzdipDQbCg==",
+  "dgSpecHash": "fhPsmQzJ3I79H9I9m/sBwXFjAliY7m1B4DIdeqOsqsVPuEx+6VIbjUM9xqzyYfYNEvn45DL/+UPEwuV/9LKtyA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Angular\\dhStore\\dhStore\\api\\api.csproj",
+  "projectFilePath": "C:\\dev\\Angular\\dhStore\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Douglas Santana\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Douglas Santana\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

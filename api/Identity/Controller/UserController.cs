@@ -29,7 +29,7 @@ namespace api.Identity.Controller
             var result = await _mediator.Send(newUser);
             if (!result.Success)
                 return BadRequest(result);
-            return Created("Usuário criado", result);
+            return Created("", result);
         }
 
         [HttpGet]
