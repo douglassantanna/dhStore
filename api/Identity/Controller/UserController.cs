@@ -31,8 +31,19 @@ namespace api.Identity.Controller
                 return BadRequest(result);
             return Created("Usuário criado", result);
         }
-        
+
         [HttpGet]
         public ActionResult<Pagination<ViewUser>> Get([FromQuery] GetUsers getUsers) => _userQuery.GetData(getUsers);
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var request = new UserToDelete(id);
+
+            var result = await _mediator.Send(request);
+            if (!result.Success)
+                return BadRequest(result);
+            return NoContent();
+        }
     }
 }

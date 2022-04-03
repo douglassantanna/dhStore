@@ -20,6 +20,7 @@ namespace api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.CaptureStartupErrors(true);
                     webBuilder.UseStartup<Startup>();
                 });
     }

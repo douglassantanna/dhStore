@@ -7,6 +7,7 @@ using api.Identity.Enum;
 using api.Shared;
 using MediatR;
 using FluentValidation;
+using System;
 
 namespace api.Identity.Services
 {
@@ -22,13 +23,22 @@ namespace api.Identity.Services
 
         public async Task<Response> Handle(NewUser request, CancellationToken cancellationToken)
         {
-            var existingEmail = _context.User.Any(u => u.Email == request.Email);
-                if(existingEmail) return new Response("Ops.. Já existe um usuário cadastrado com este e-mail", false);
-                
-            var user = new User(request.Name, request.Surname, request.Email, request.Role);
-            _context.User.Add(user);
-            await _context.SaveChangesAsync();
-            return new Response("Usuário cadastrado com sucesso.");
+            try
+            {
+                var existingEmail = _context.User.Any(u => u.Email == request.Email);
+                if (existingEmail) return new Response("Ops.. Já existe um usuário cadastrado com este e-mail", false);
+
+                var user = new User(request.Name, request.Surname, request.Email, request.Role);
+                _context.User.Add(user);
+                await _context.SaveChangesAsync();
+                return new Response("Usuário cadastrado com sucesso.");
+            }
+            catch (Exception e)
+            {
+
+                return new Response(e.Message, false);
+            }
+
         }
     }
     public class NewUserValidation : AbstractValidator<NewUser>

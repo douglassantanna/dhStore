@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace api.Identity.Services
+namespace api.Auth.Services
 {
     public static class TokenService
     {
