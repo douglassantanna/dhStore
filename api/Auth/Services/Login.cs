@@ -29,7 +29,7 @@ namespace api.Auth.Services
 
             var user = await _context.User
                         .Where(x => x.Email == request.Email)
-                        .Where(x => x.Password == request.Password.Encrypt())
+                        .Where(x => x.Password == request.Password)
                         .FirstOrDefaultAsync();
             if (user is null)
                 return new Response("Dados não conferem. Senha inválida.", false, user);

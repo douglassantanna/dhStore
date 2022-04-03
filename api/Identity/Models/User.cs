@@ -6,14 +6,14 @@ namespace api.Identity.Models
 {
     public class User : Entity, IAggregateRoot
     {
-        public User(string name, string surname, string email, Role role)
+        public User(string name, string surname, string email, Role role, string password)
         {
             Name = name;
             Surname = surname;
             Email = email;
             Role = role;
             IsActive = true;
-            // Password = Guid.NewGuid().ToString().Encrypt();
+            Password = password;
             CreatedAt = DateTime.Now;
         }
 

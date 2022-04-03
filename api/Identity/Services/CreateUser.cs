@@ -28,7 +28,7 @@ namespace api.Identity.Services
                 var existingEmail = _context.User.Any(u => u.Email == request.Email);
                 if (existingEmail) return new Response("Ops.. Ja existe um usuario cadastrado com este e-mail.", false);
 
-                var user = new User(request.Name, request.Surname, request.Email, request.Role);
+                var user = new User(request.Name, request.Surname, request.Email, request.Role, request.Password);
                 _context.User.Add(user);
                 await _context.SaveChangesAsync();
                 return new Response("Usuario cadastrado com sucesso.");
