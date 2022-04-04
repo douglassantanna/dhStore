@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  urlApi: "http://localhost:3000",
+  urlApi: "https://localhost:5001",
 };
+export const TOKEN_STORAGE = 'TOKEN';
 
 /*
  * For easier debugging in development mode, you can import the following file

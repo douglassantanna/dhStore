@@ -1,24 +1,29 @@
 <div class="main">
   <div class="left-container">
-    <img src="assets/design.png" alt="">
+    <img src="assets/design.png" alt="" />
   </div>
   <div class="right-container">
     <mat-card class="login mat-elevation-z5">
       <span class="title"><mat-icon>phone_iphone</mat-icon>dh tech</span>
-      <form action="">
-
+      <form (ngSubmit)="login()" #form="ngForm">
         <mat-form-field class="example-full-width" appearance="legacy">
           <mat-label>email</mat-label>
-          <input matInput/>
+          <input matInput [(ngModel)]="userAuth.email" name="email" required />
         </mat-form-field>
 
         <mat-form-field class="example-full-width" appearance="legacy">
           <mat-label>senha</mat-label>
-          <input matInput type="password"/>
+          <input
+            matInput
+            [(ngModel)]="userAuth.password"
+            type="password"
+            name="password"
+            required
+          />
         </mat-form-field>
 
+        <button mat-raised-button color="accent" type="submit">Acessar</button>
       </form>
-      <button mat-raised-button color="accent" routerLink="/orders">Acessar</button>
       <a href="#create-account">Não possuo cadastro</a>
       <a href="#forgot-password">Esqueci minha senha</a>
     </mat-card>

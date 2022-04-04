@@ -35,7 +35,7 @@ namespace api.Auth.Services
                 return new Response("Dados não conferem. Senha inválida.", false, user);
 
             var token = _configuration.TokenGenerate(user.Email, user.Name, user.Role.ToString());
-            return new Response("Token gerado.", true, new {token});
+            return new Response("Acesso permitido", true, new {token});
         }
     }
 }

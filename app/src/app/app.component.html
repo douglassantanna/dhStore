@@ -1,3 +1,8 @@
-<dh-nav-bar></dh-nav-bar>
-
-<router-outlet></router-outlet>
+<ng-container *ngIf="tokenService.token; else unAuthorized">
+  <dh-nav-bar>
+    <!-- <router-outlet></router-outlet> -->
+  </dh-nav-bar>
+</ng-container>
+<ng-template #unAuthorized>
+  <router-outlet></router-outlet>
+</ng-template>

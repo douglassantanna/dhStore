@@ -19,7 +19,7 @@ export class OrdersComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getOrders();
+    // this.getOrders();
   }
 
   getOrders() {
